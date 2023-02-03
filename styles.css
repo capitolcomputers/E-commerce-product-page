@@ -41,7 +41,6 @@ body {
 }
 
 /* ////////// Header ///////// */
-
 .header {
   max-width: 1400px;
   position: relative;
@@ -144,11 +143,35 @@ body {
   max-width: 70%;
 }
 
+
+/* ///////images and smaller images */
 .section__main-img  img{
   width: 100%;
   height: 100%;
   border-radius: 10px;
 } 
+
+/* //smaller //*/
+
+.mini__images{
+  display: flex;
+  max-width: 100%;
+  gap: 2.5rem;
+  padding: 1.5rem .8rem 0;
+  
+}
+
+.mini__images img {
+  max-width: 14%;
+  border-radius: 8px;
+  height: 7.7rem;
+}
+
+.active {
+    line-height: 0%;
+    border: 3.2px solid var(--Orange);
+    opacity: 0.5;
+}
 
 .first_text {
   color: var(--Orange);
@@ -205,55 +228,86 @@ body {
 
 .btn__for-clicked {
   margin-top: 1.4rem;
-  width: 100%;
-  /* display: inline-block; */
+  min-width: 100%;
   display: flex;
-  outline:  2px solid red;
 }
 
 .clicked_for_cart {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
-  width: 20rem;
+  gap: 3rem;
+  width: 22rem;
   height: 5.2rem;
   background-color: var(--light-grayish-blue);
-  margin-right: 3.5rem;
+  margin-right: 1rem;
   margin-bottom: -1.65rem;
+  padding: 1.6rem 1rem;
+  height: 6rem;
+  border-radius: .75rem;
 }
 
-
 .clicked_for_cart button {
-    width: 1.65rem;
     border: none;
     cursor: pointer;
+    background: none;
 }
 
-.clicked_for_cart button {
-  transform: translateY(2px);
+.clicked_for_cart button img {
+  width: 1.5rem;
+  border: none;
+  background: none;
+  outline: 0;
+}
+
+.clicked_for_cart button:active {
+  transform: translateY(3px);
 }
 
 .quantity_selected {
   font-weight: 700;
   border-left: 1px solid var(--dark-grayish-blue);
   border-right: 1px solid var(--dark-grayish-blue);
-  padding: 0 3.5rem;
+  padding: 0 3rem;
   font-size: 1.6rem;
-
 }
-
 
 .btn {
+  color: var(--white);
   border: none;
-  height: 5.2rem;
+  height: 5.7rem;
   padding: 1.2rem 4rem;
-  width: 24rem;
-  margin-left: 1.4rem;
-  margin-top: 1.4rem;
+  width: 25rem;
+  margin-left: 2rem;
   display: inline-block;
+  position: relative;
   background-color: var(--Orange);
+  fill: currentColor;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px 0px hsl(26deg 100% 55% / 30%);
+   cursor: pointer;
+  transition: all 700ms;
 }
+
+
+.cart_parent {
+  position: relative;
+  right: 2rem;
+  fill: currentColor;
+  color: #fff;
+}
+
+.btn__cart {
+  fill: currentColor;
+  color: #fff;
+}
+
+.btn__text {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+
 
 /*/////////// reuseable classes ///*/
 .view_box {
