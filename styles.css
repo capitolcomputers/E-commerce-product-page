@@ -35,8 +35,6 @@ html {
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  /* display: flex; */
-  /* flex-direction: column; */
   margin: auto;
   width: 1200px;
   min-height: 100vh;
@@ -50,7 +48,7 @@ body {
   height: 13.5vh;
   padding-top: 1.4rem;
   border-bottom: 2px solid var(--grayish-blue);
-  margin-bottom: 6rem;
+  margin-bottom: 4.5rem;
 }
 
 .header__buttom {
@@ -122,41 +120,139 @@ body {
 }
 
 
-/* Main */
+/*//////// Main ////////*/
 .main {
   height: 70vh;
-  margin-top: 7.5rem;
-  max-width: 1400px;
-  padding: 0 3rem;
+  max-width: 1300px;
+  padding: 0 5rem;
   display: flex;
 }
 
 .main__section-img {
   max-width: 50%;
   margin-left: 3rem;
-  /* margin: auto; */
 }
 
 .main__section-text {
-  max-width: 45%;
+  border: 2px solid red;
+  max-width: 47%;
   padding: 5rem 1rem 0;
-  margin-left: -10rem;
+  margin-left: -5rem;
 }
 
 .section__main-img {
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .section__main-img  img{
   width: 100%;
   height: 100%;
   border-radius: 10px;
-}
+} 
 
 .first_text {
   color: var(--Orange);
   font-size: 2.5rem;
   font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+.second_text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.paragraph_text {
+  font-size: 1.7rem;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.6rem;
+}
+
+.price_tag_container {
+  margin-top: -.6rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  display: inline-block;
+}
+
+
+.price_percent {
+  display: inline-block;
+  color: var(--Orange);
+  font-size: 1.9rem;
+  background-color: var();
+  font-weight: 600;
+  background-color: var(--Pale-orange);
+  padding: 0 0.7rem;
+  border-radius: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+
+.previous_price {
+  color: var(--grayish-blue);
+  padding-top: 0.8rem;
+  text-decoration: line-through 2px;
+  font-weight: 500;
+  font-size: 1.55rem;
+  margin-right: 10rem;
+}
+
+.btn__for-clicked {
+  margin-top: 1.4rem;
+  width: 100%;
+  /* display: inline-block; */
+  display: flex;
+  outline:  2px solid red;
+}
+
+.clicked_for_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 20rem;
+  height: 5.2rem;
+  background-color: var(--light-grayish-blue);
+  margin-right: 3.5rem;
+  margin-bottom: -1.65rem;
+}
+
+
+.clicked_for_cart button {
+    width: 1.65rem;
+    border: none;
+    cursor: pointer;
+}
+
+.clicked_for_cart button {
+  transform: translateY(2px);
+}
+
+.quantity_selected {
+  font-weight: 700;
+  border-left: 1px solid var(--dark-grayish-blue);
+  border-right: 1px solid var(--dark-grayish-blue);
+  padding: 0 3.5rem;
+  font-size: 1.6rem;
+
+}
+
+
+.btn {
+  border: none;
+  height: 5.2rem;
+  padding: 1.2rem 4rem;
+  width: 24rem;
+  margin-left: 1.4rem;
+  margin-top: 1.4rem;
+  display: inline-block;
+  background-color: var(--Orange);
 }
 
 /*/////////// reuseable classes ///*/

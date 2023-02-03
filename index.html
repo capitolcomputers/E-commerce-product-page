@@ -57,18 +57,29 @@
 
     <section class="main__section-text">
       <p class="first_text">Sneaker Company</p>
-      <h2 class="second_text">Fall Limited Edition Sneakers</h2>
+      <h2 class="second_text">Fall Limited Edition <br> Sneakers</h2>
 
       <p class="paragraph_text">
           These low-profile sneakers are your perfect casual wear companion. Featuring a 
          durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
 
-      <p class="price"> $125.00 <span class="price_percent"> 50%</span></p>
-
+     <div class="price_tag_container">
+        <p class="price"> $125.00 </p> 
+      <span class="price_percent"> 50%</span>
+     </div>
+      
       <p class="previous_price">$250.00</p>
 
-      <button class="btn"> <img src="./images/icon-cart.svg" alt=""> Add to cart </button>
+     <div class="btn__for-clicked">
+        <div class="clicked_for_cart">  
+          <button class="svg__btns">  <img src="./images/icon-minus.svg" alt=""> </button> 
+          <p class="quantity_selected">0</p>
+          <button class="svg__btns"> <img src="./images/icon-plus.svg" alt=""> </button> 
+        </div>
+
+      <button class="btn"> <img src="./images/icon-cart.svg" alt=""> Add to cart </button> 
+     </div>
     </section>
   </main>
   <!-- 0
