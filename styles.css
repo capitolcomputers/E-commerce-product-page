@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800;900&display=swap');
 
 :root{
   --blue-color: hsl(228, 45%, 44%);
@@ -42,12 +42,13 @@ body {
 
 /* ////////// Header ///////// */
 .header {
-  max-width: 1400px;
+  max-width: 1200px;
   position: relative;
   height: 13.5vh;
-  padding-top: 1.4rem;
+  padding: 1.4rem 0rem .3rem;
+
   border-bottom: 2px solid var(--grayish-blue);
-  margin-bottom: 4.5rem;
+  margin: .2rem 2rem 4.5rem;
 }
 
 .header__buttom {
@@ -55,8 +56,8 @@ body {
 }
 
 .header__navigation {
-  display: block;
-  max-width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .header__navbar {
@@ -67,29 +68,36 @@ body {
   font-size: 3.2rem;
   font-weight: 800;
   display: inline-block;
-  margin-right: 1.5rem;
+  letter-spacing: .4px;
+  margin-right: .7rem;
 }
 
 .header__navbar__list{
   display: inline-block;
+  margin-left: 1rem;
 }
 
 .header__navbar_items {
   list-style: none;
 }
 
-.header__navbar_items  .header__navbar_anchor {
-  margin-left: 2.4rem;
+.header__navbar_anchor {
+  margin-left: 2.5rem;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.521);
   font-size: 1.6rem;
   font-weight: 500;
 }
 
-.header_cart_N_image {
+.header__navbar_anchor:hover {
+  padding-bottom: 3.6rem;
+    border-bottom: 2px solid var(--Orange)
+  }
+  
+  .header_cart_N_image {
   display: inline-block;
   position: relative;
-  margin-left: 43rem;
+  left: 35rem;
 }
 
 .header_cart {
@@ -97,14 +105,15 @@ body {
   margin-right: 2rem;
   padding-left: 2rem;
   position: relative;
-  left: 2.7rem;
+  left: 2.8rem;
+  cursor: pointer;
 }
 
 .header_avatar {
   display: inline-block;
   max-width: 10rem;
   position: relative;
-  top: 1rem;
+  top: .8rem;
   left: 5rem;
   cursor: pointer;
 }
@@ -119,7 +128,7 @@ body {
 }
 
 
-/*//////// Main ////////*/
+/*////////////// Main ////////*/
 .main {
   height: 70vh;
   max-width: 1300px;
@@ -133,7 +142,6 @@ body {
 }
 
 .main__section-text {
-  border: 2px solid red;
   max-width: 47%;
   padding: 5rem 1rem 0;
   margin-left: -5rem;
@@ -149,6 +157,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  cursor: pointer;
 } 
 
 /* //smaller //*/
@@ -164,6 +173,7 @@ body {
 .mini__images img {
   max-width: 14%;
   border-radius: 8px;
+  cursor: pointer;
   height: 7.7rem;
 }
 
@@ -221,8 +231,8 @@ body {
   color: var(--grayish-blue);
   padding-top: 0.8rem;
   text-decoration: line-through 2px;
-  font-weight: 500;
-  font-size: 1.55rem;
+  font-weight: 700;
+  font-size: 1.7rem;
   margin-right: 10rem;
 }
 
@@ -313,3 +323,13 @@ body {
 .view_box {
   border: 3px solid orangered;
 }
+
+
+/* TODO 
+-- Cart amount onlick with orange background.
+-- Cart pop design for a). pre_selected b).post selected
+-- Image modal pop-up with a).Mini image below. b). X for calcel c).Left and right toggle for image sslider d).
+-- Mobile responsiveness. a).Hamburger menu b).background color opacity on pop up
+--  Cart number increase on addition click and reduce on minus click
+
+*/
