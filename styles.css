@@ -96,8 +96,8 @@ body {
   
   .header_cart_N_image {
   display: inline-block;
-  position: relative;
   left: 35rem;
+  position: relative;
 }
 
 .header_cart {
@@ -109,6 +109,114 @@ body {
   cursor: pointer;
 }
 
+/* Figure amount on cart container */
+.selected__figure {
+  position: relative;
+  display: inline-block;
+  top: -1.4rem;
+  left: 3.5rem;
+  color: var(--white);
+  width: 2rem;
+  height: 2.2rem;
+  background-color: var(--Orange);
+  border-radius: 50%;
+  padding-left: .7rem;
+}
+
+/* Figure amount*/
+.figure {
+  max-width: 100%;
+  margin-top: .4rem;
+}
+
+.totalItemsInfo {
+  position: absolute;
+  width: 40rem;
+  height: 26rem;
+  /* outline: 3px solid orangered; */
+  top: 4.5rem;
+  left: -18rem;
+  right: 10rem;
+  margin: auto;
+  display: inline-block;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 2.5rem;
+  padding-bottom: 5rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  /* box-shadow: ; */
+   box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.cart {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--grayish-blue);
+}
+
+.itemsInfo__innerbox {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.text_word{
+font-size: 1.7rem;
+color: var(--dark-grayish-blue);
+/* font-weight: 500; */
+}
+
+.itemsInfo__innerbox img {
+  max-width: 6rem;
+}
+
+.icon_delete {
+  width: 1.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+}
+
+
+.items {
+  display: inline-block;
+  /* text-align: center; */
+  position: relative;
+  left: 9rem;
+  bottom: 5rem;
+  font-size: 1.7rem;
+}
+
+.boldertext {
+  margin-left: 1.2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.button {
+  color: var(--white);
+  border: none;
+  height: 5.7rem;
+  padding: 1.2rem 4rem;
+  font-size: 1.65rem;
+  width: 32rem;
+  margin-left: 2rem;
+  display: inline-block;
+  position: relative;
+  margin-top: -1.6rem;
+  background-color: var(--Orange);
+  border-radius: 12px;
+  box-shadow: 4px 4px 4px 0px hsl(26deg 100% 55% / 30%);
+   cursor: pointer;
+  transition: all 700ms;
+}
+
+
+
+/* Header continuation */
 .header_avatar {
   display: inline-block;
   max-width: 10rem;
@@ -153,6 +261,7 @@ body {
 
 
 /* ///////images and smaller images */
+
 .section__main-img  img{
   width: 100%;
   height: 100%;
@@ -325,9 +434,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 80%;
-  /* height: 80vh; */
   height: 95%;
-  /* background-color: white; */
   padding: 6rem;
   border-radius: 5px;
   z-index: 10;
@@ -339,7 +446,6 @@ body {
   color: var(--Orange);
   right: 10rem;
   font-size: 4rem;
-  /* color: #333; */
   cursor: pointer;
   border: none;
   background: none;
@@ -350,8 +456,43 @@ body {
   max-width: 78%;
   position: relative;
   left: 50%;
-  /* right: 50%; */
   transform: translate(-50%, -50%);
+}
+
+.modal-img__box img {
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mini__images_modal { 
+  position: relative;
+  justify-content: center;
+  left: 10.5%;
+  bottom: 21rem;
+  max-width: 80% ;
+  display: flex;
+  padding: 1.5rem .8rem 0;
+  gap: 2rem;
+}
+
+.mini__images_modal img {
+  max-width: 60%;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 7.7rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
 
 .prev_icon_parent {
@@ -381,47 +522,6 @@ body {
   right: 78.5%;
   z-index: 10;
 }
-/* .hidden {
-  display: none;
-} */
-
-.modal-img__box img {
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
-  max-width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.mini__images_modal { 
-  position: relative;
-  justify-content: center;
-  /* outline: 2px solid orangered; */
-  left: 10.5%;
-  bottom: 21rem;
-  max-width: 80% ;
-  display: flex;
-  padding: 1.5rem .8rem 0;
-  gap: 2rem;
-}
-
-
-.mini__images_modal img {
-  max-width: 60%;
-  border-radius: 8px;
-  cursor: pointer;
-  height: 7.7rem;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
 
 /* 
 remaiing;
@@ -434,6 +534,10 @@ javascript
 /*/////////// reuseable classes ///*/
 .view_box {
   border: 3px solid orangered;
+}
+
+.hidden {
+  display: none;
 }
 
 
