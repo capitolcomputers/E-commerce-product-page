@@ -160,7 +160,7 @@ body {
   cursor: pointer;
 } 
 
-/* //smaller //*/
+/* //smaller images//*/
 
 .mini__images{
   display: flex;
@@ -317,6 +317,118 @@ body {
   font-weight: 700;
 }
 
+
+/* ////////////////////Modal Pop Up */
+.images__modal {
+  position: absolute;
+  top: 51.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  /* height: 80vh; */
+  height: 95%;
+  /* background-color: white; */
+  padding: 6rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.close_Modal_popup {
+  position: absolute;
+  top: 1.5rem;
+  color: var(--Orange);
+  right: 10rem;
+  font-size: 4rem;
+  /* color: #333; */
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-img__box {
+  margin-top: 40%;
+  max-width: 78%;
+  position: relative;
+  left: 50%;
+  /* right: 50%; */
+  transform: translate(-50%, -50%);
+}
+
+.prev_icon_parent {
+  max-width: 5rem;
+  background-color: var(--white);
+  /* margin: auto; */
+  padding: 1.2rem 1.7rem 1.2rem 1.55rem;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 78.5%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.next_icon_parent {
+  /* max-width: 2rem; */
+    max-width: 5rem;
+  background-color: var(--white);
+  /* margin: auto; */
+  padding: 1.2rem 1.7rem 1.2rem 1.55rem;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 78.5%;
+  z-index: 10;
+}
+/* .hidden {
+  display: none;
+} */
+
+.modal-img__box img {
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mini__images_modal { 
+  position: relative;
+  justify-content: center;
+  /* outline: 2px solid orangered; */
+  left: 10.5%;
+  bottom: 21rem;
+  max-width: 80% ;
+  display: flex;
+  padding: 1.5rem .8rem 0;
+  gap: 2rem;
+}
+
+
+.mini__images_modal img {
+  max-width: 60%;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 7.7rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/* 
+remaiing;
+mobile menu;
+cart for 1)empty display 2) selected input display
+javascript
+*/
 
 
 /*/////////// reuseable classes ///*/
