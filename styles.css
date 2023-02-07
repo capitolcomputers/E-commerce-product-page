@@ -167,6 +167,7 @@ body {
 .text_word{
 font-size: 1.7rem;
 color: var(--dark-grayish-blue);
+cursor: text;
 /* font-weight: 500; */
 }
 
@@ -459,13 +460,18 @@ color: var(--dark-grayish-blue);
   transform: translate(-50%, -50%);
 }
 
-.modal-img__box img {
+
+.modal-img__box .modal_img{
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
   max-width: 100%;
   border-radius: 10px;
+  /* display: none; */
   cursor: pointer;
 }
 
+/* .activeDisplay {
+  display: block;
+} */
 .mini__images_modal { 
   position: relative;
   justify-content: center;
@@ -521,6 +527,7 @@ color: var(--dark-grayish-blue);
   top: 50%;
   right: 78.5%;
   z-index: 10;
+  cursor: pointer;
 }
 
 /* 

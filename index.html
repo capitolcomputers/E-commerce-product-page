@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
 
-  <script src="scripts.js"></script>
+  <script src="scripts.js" defer></script>
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -38,29 +38,13 @@
             <h4 class="figure">1</h4>
           </span>
           
-          <div class="totalItemsInfo hidden">
-            <p class="cart">Cart</p>
+          <!-- Display beneath cart when clicked -->
+          <div class="totalItemsInfo  hidden">
 
-            <div class="itemsInfo__innerbox">
-              <img class=".hidden" src="./images/image-product-1-thumbnail.jpg" alt="">
-              <img class="hidden" src="./images/image-product-1-thumbnail.jpg" alt="">
-              <img class="hidden" src="./images/image-product-1-thumbnail.jpg" alt="">
-              <img class="hidden" src="./images/image-product-1-thumbnail.jpg" alt="">
-
-              <p class="text_word">Fall Limited Edition Sneakers</p>
-
-              <img class="icon_delete" src="./images/icon-delete.svg" alt="">
-
-            </div>
-
-              <span class="items">
-                $125.00 x 2 <span class="boldertext"> 250</span>
-              </span>
-            <button class="button">Checkout</button>
           </div>
 
           <!-- cart Image -->
-          <img src="./images/icon-cart.svg" alt="">
+          <img id="cart__for_items" src="./images/icon-cart.svg" alt="">
         </div>
         <div class="header_avatar">
           <img src=".//images/image-avatar.png" alt="">
@@ -73,7 +57,7 @@
   <main class="main">
     <section class="main__section-img">
       <div class="section__main-img">
-        <img src="./images/image-product-1.jpg" alt="">
+        <img class="img" src="./images/image-product-1.jpg" alt="">
       </div>
       
       <div class="mini__images">
@@ -96,7 +80,14 @@
       <button class="close_Modal_popup">&times;</button></button>
 
       <div class="modal-img__box">
-          <img src="./images/image-product-1.jpg" alt="">
+          <img class="modal_img" src="./images/image-product-1.jpg" alt="">
+     
+
+          <img class="modal_img hidden" src="./images/image-product-2.jpg" alt="">
+
+          <img class="modal_img hidden" src="./images/image-product-3.jpg" alt="">
+          
+          <img class="modal_img hidden" src="./images/image-product-4.jpg" alt="">
         </div>
 
           <div class="mini__images_modal">
@@ -112,6 +103,7 @@
       </section>
       <div class="overlay hidden"></div>
 
+      <!-- Opposite  -->
     <section class="main__section-text">
       <p class="first_text">Sneaker Company</p>
       <h2 class="second_text">Fall Limited Edition <br> Sneakers</h2>
